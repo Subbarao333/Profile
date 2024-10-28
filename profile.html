@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Padarthi SUbbarao - Profile</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Header Styles */
+        header {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin: 20px auto;
+            display: block;
+            animation: profile-bounce 1.5s ease-in-out infinite;
+        }
+
+        @keyframes profile-bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* Navigation Styles */
+        nav {
+            background-color: #333;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: orange;
+            text-shadow: 0 0 10px rgba(255, 140, 0, 0.8);
+        }
+
+        /* Section Styles */
+        section {
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid orange;
+            padding-bottom: 10px;
+            text-align: center;
+            animation: slide-down 1s ease-out;
+        }
+
+        /* Education Section */
+        .education-item {
+            display: flex;
+            align-items: center;
+            margin: 20px 0;
+            opacity: 0;
+            animation: fade-in 1.5s ease forwards;
+        }
+
+        .education-item:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+
+        .education-item:nth-child(3) {
+            animation-delay: 1s;
+        }
+
+        .education-image {
+            width: 120px;
+            height: 90px;
+            object-fit: cover;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animations */
+        @keyframes slide-down {
+            from {
+                transform: translateY(-20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fade-in {
+            to {
+                opacity: 1;
+            }
+        }
+
+        /* Responsive Styles */
+        @media (max-width: 600px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+
+            .education-item {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .education-image {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        /* Footer Styles */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        footer a {
+            color: orange;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="D:\personal files\passport size photo.jpeg" alt="Profile Image" class="profile-image">
+        <h1>Padarthi Subbarao</h1>
+        <p>Email: padarthisubbarao333@gmail.com</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#hobbies">Hobbies</a></li>
+        </ul>
+    </nav>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item">
+            <img src="C:\Users\HP\Downloads\Logo.jpeg" alt="Kalasalingam Academy Of Research And Education" class="education-image">
+            <p><strong>Kalasalingam Academy Of Research And Education</strong><br>
+                B. Tech in Computer Science Engineering (2020 – 2024)<br>
+                CGPA: 8.6 / 10
+            </p>
+        </div>
+
+        <div class="education-item">
+            <img src="C:\Users\HP\Downloads\download.png" alt="Narayana Junior College" class="education-image">
+            <p><strong>Narayana Junior College</strong><br>
+                Intermediate - AP State Board (Graduated May 2020)<br>
+                CGPA: 8.8 / 10
+            </p>
+        </div>
+
+        <div class="education-item">
+            <img src="C:\Users\HP\Downloads\oxford logo.jpeg" alt="Oxford (E.M) School" class="education-image">
+            <p><strong>Oxford (E.M) School</strong><br>
+                SSC - AP State Board (Graduated April 2018)<br>
+                CGPA: 9.7 / 10
+            </p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><b>Programming:</b>Java, C</li>
+            <li><b>Technologies:</b> HTML, CSS, JavaScript</li>
+            <li><b>Database:</b> SQL,</li>
+            <li><b>Soft Skills:</b> Strong analytical and problem-solving skills, communication, and teamwork</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><b>Driver Drpwsiness Detection</b> Utilizes eye-blink detection, alcohol sensing, and GPS tracking to enhance vehicle safety.</li>
+            <li><b>Excess Food Distribution System
+            </b> This project leverages technological solutions, including apps, to streamline the process of alerting donors about surplus food and linking
+            them with groups or people capable of gathering and distributing the food effectively.
+            </li>
+        </ul>
+    </section>
+
+    <section id="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Azure Fundamentals | Microsoft</li>
+            <li>Python, Java, SQL (Basics) | HackerRank</li>
+        </ul>
+    </section>
+
+    <section id="hobbies">
+        <h2>Hobbies</h2>
+        <ul>
+            <li>Photography</li>
+            <li>Cricket</li>
+            <li>Travelling</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/padarthi-subbarao-888b81269">linkedin.com/in/padarthi-subbarao</a></p>
+    </footer>
+</body>
+
+</html>
